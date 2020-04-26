@@ -3,6 +3,7 @@
 PPA_LUTRIS="ppa:lutris-team/lutris"
 PPA_GRAPHICS_DRIVERS="ppa:graphics-drivers/ppa"
 PPA_TELEGRAM="ppa:atareao/telegram"
+PPA_AUDIO="ppa:yktooo/ppa"
 
 URL_WINE_KEY="https://dl.winehq.org/wine-builds/winehq.key"
 URL_PPA_WINE="https://dl.winehq.org/wine-builds/ubuntu/"
@@ -44,6 +45,8 @@ sudo apt update -y
 sudo add-apt-repository "$PPA_LUTRIS" -y
 sudo add-apt-repository "$PPA_GRAPHICS_DRIVERS" -y
 sudo add-apt-repository "$PPA_TELEGRAM" -y
+sudo add-apt-repository "$PPA_AUDIO" -y
+
 wget -nc "$URL_WINE_KEY"
 sudo apt-key add winehq.key
 sudo apt-add-repository "deb $URL_PPA_WINE bionic main"
