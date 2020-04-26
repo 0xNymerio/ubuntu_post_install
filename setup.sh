@@ -100,3 +100,7 @@ flatpak update
 sudo apt autoclean
 sudo apt autoremove -y
 # ---------------------------------------------------------------------- #
+
+# ----------------------------- COMENTARIOS TV STI ----------------------------- #
+# Modelo: Semp Toshiba LE3273
+# Configs para Overscan: Usando o Controle Remoto pressione INPUT, em seguida digite "3195". Esta opção abre o menu de Fábrica do aparelho.
