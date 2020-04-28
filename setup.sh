@@ -27,6 +27,7 @@ PROGRAMAS_PARA_INSTALAR=(
   lutris
   libvulkan1
   libvulkan1:i386
+  okular
 )
 # ---------------------------------------------------------------------- #
 
