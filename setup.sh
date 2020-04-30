@@ -4,6 +4,7 @@ PPA_LUTRIS="ppa:lutris-team/lutris"
 PPA_GRAPHICS_DRIVERS="ppa:graphics-drivers/ppa"
 PPA_TELEGRAM="ppa:atareao/telegram"
 PPA_AUDIO="ppa:yktooo/ppa"
+PPA_OBS="ppa:obsproject/obs-studio"
 
 URL_WINE_KEY="https://dl.winehq.org/wine-builds/winehq.key"
 URL_PPA_WINE="https://dl.winehq.org/wine-builds/ubuntu/"
@@ -28,6 +29,8 @@ PROGRAMAS_PARA_INSTALAR=(
   libvulkan1
   libvulkan1:i386
   okular
+  ffmpeg
+  obs-studio
 )
 # ---------------------------------------------------------------------- #
 
@@ -47,6 +50,7 @@ sudo add-apt-repository "$PPA_LUTRIS" -y
 sudo add-apt-repository "$PPA_GRAPHICS_DRIVERS" -y
 sudo add-apt-repository "$PPA_TELEGRAM" -y
 sudo add-apt-repository "$PPA_AUDIO" -y
+sudo add-apt-repository "$PPA_OBS" -y
 
 wget -nc "$URL_WINE_KEY"
 sudo apt-key add winehq.key
