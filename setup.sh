@@ -32,6 +32,7 @@ PROGRAMAS_PARA_INSTALAR=(
   ffmpeg
   obs-studio
   paprefs # audio simultaneo
+  git
 )
 # ---------------------------------------------------------------------- #
 
