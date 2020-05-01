@@ -33,6 +33,7 @@ PROGRAMAS_PARA_INSTALAR=(
   obs-studio
   paprefs # audio simultaneo
   git
+  python3-pip
 )
 # ---------------------------------------------------------------------- #
 
@@ -98,6 +99,10 @@ sudo snap install atom --classic
 sudo snap install slack --classic
 sudo snap install skype --classic
 sudo snap install photogimp
+
+## Instalando Libs Python3 ##
+python3 -m pip install 'python-language-server[all]'
+
 # ---------------------------------------------------------------------- #
 
 # ----------------------------- PÓS-INSTALAÇÃO ----------------------------- #
