@@ -31,6 +31,7 @@ PROGRAMAS_PARA_INSTALAR=(
   okular
   ffmpeg
   obs-studio
+  paprefs # audio simultaneo
 )
 # ---------------------------------------------------------------------- #
 
