@@ -34,6 +34,8 @@ PROGRAMAS_PARA_INSTALAR=(
   paprefs # audio simultaneo
   git
   python3-pip
+  img2pdf
+  vim
 )
 # ---------------------------------------------------------------------- #
 
