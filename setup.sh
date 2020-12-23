@@ -11,7 +11,6 @@ URL_PPA_WINE="https://dl.winehq.org/wine-builds/ubuntu/"
 URL_GOOGLE_CHROME="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 URL_SIMPLE_NOTE="https://github.com/Automattic/simplenote-electron/releases/download/v1.8.0/Simplenote-linux-1.8.0-amd64.deb"
 URL_4K_VIDEO_DOWNLOADER="https://dl.4kdownload.com/app/4kvideodownloader_4.9.2-1_amd64.deb"
-URL_FRANZ="https://github.com/meetfranz/franz/releases/download/v5.4.0/franz_5.4.0_amd64.deb"
 
 DIRETORIO_DOWNLOADS="$HOME/Downloads/programas"
 
@@ -33,9 +32,11 @@ PROGRAMAS_PARA_INSTALAR=(
   obs-studio
   paprefs # audio simultaneo
   git
+  python3.8
   python3-pip
   img2pdf
   vim
+  xournal
 )
 # ---------------------------------------------------------------------- #
 
@@ -71,8 +72,6 @@ mkdir "$DIRETORIO_DOWNLOADS"
 wget -c "$URL_GOOGLE_CHROME"       -P "$DIRETORIO_DOWNLOADS"
 wget -c "$URL_SIMPLE_NOTE"         -P "$DIRETORIO_DOWNLOADS"
 wget -c "$URL_4K_VIDEO_DOWNLOADER" -P "$DIRETORIO_DOWNLOADS"
-wget -c "$URL_FRANZ" -P "$DIRETORIO_DOWNLOADS"
-
 
 ## Instalando pacotes .deb baixados na sessão anterior ##
 sudo dpkg -i $DIRETORIO_DOWNLOADS/*.deb
@@ -94,16 +93,15 @@ flatpak install flathub com.obsproject.Studio -y
 ## Instalando pacotes Snap ##
 sudo snap install spotify
 sudo snap install vlc
-sudo snap install nmap
-sudo snap install mc-installer
 sudo snap install discord
 sudo snap install atom --classic
 sudo snap install slack --classic
-sudo snap install skype --classic
-sudo snap install photogimp
+sudo snap install teams-for-linux
+sudo snap install ufw
+sudo snap install zaproxy --classic
 
 ## Instalando Libs Python3 ##
-python3 -m pip install 'python-language-server[all]'
+sudo python3 -m pip install 'python-language-server[all]'
 
 # ---------------------------------------------------------------------- #
 
@@ -113,6 +111,7 @@ sudo apt update && sudo apt dist-upgrade -y
 flatpak update
 sudo apt autoclean
 sudo apt autoremove -y
+sudo rm -rf "$DIRETORIO_DOWNLOADS"
 # ---------------------------------------------------------------------- #
 
 # ----------------------------- COMENTARIOS TV STI ----------------------------- #
